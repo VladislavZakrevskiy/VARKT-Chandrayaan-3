@@ -17,7 +17,7 @@ mission_start_time = conn.space_center.ut
 actual_time = mission_start_time
 
 while True:
-    if current_time() - actual_time >= 0.1:
+    if current_time() - actual_time >= 1:
         actual_time = current_time()
         time_flight = actual_time - mission_start_time
         angle = vessel.flight().pitch
